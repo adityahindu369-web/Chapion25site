@@ -336,105 +336,341 @@
             setTimeout(loadSubjects, 100);
         });
 
-        // New subjects data with the provided subjects
+        // Complete data structure with ALL subjects and chapters
         const subjectsData = [
             {
-                name: "ꜱᴛʀᴀᴛᴇɢʏ & ɢᴜɪᴅᴀɴᴄᴇ",
-                id: "strategy-guidance",
-                chapters: [
-                    { name: "strategy & guidance", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3510?hash=AgADTQ" }
-                ]
-            },
-            {
-                name: "ꜱꜱᴄ ɴᴇᴡ ᴘᴀᴛᴛᴇʀɴ ᴄᴏɴᴄᴇᴘᴛꜱ",
-                id: "ssc-new-pattern",
-                chapters: [
-                    { name: "monty hall problem", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3506?hash=AgAD0A" },
-                    { name: "binary no system", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3508?hash=AgAD0w" }
-                ]
-            },
-            {
                 name: "ᴄᴀʟᴄᴜʟᴀᴛɪᴏɴ ᴠɪᴅᴇᴏꜱ",
-                id: "calculation-videos",
+                id: "calculation",
                 chapters: [
-                    { name: "digital sum class 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3512?hash=AgAD9Q" },
-                    { name: "digital sum class 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3516?hash=AgADrQ" },
-                    { name: "calculation square root 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3518?hash=AgADrw" },
-                    { name: "calculation square 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3514?hash=AgADsA" },
-                    { name: "calculation square root 03", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3520?hash=AgADsg" },
-                    { name: "calculation cube 04", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3522?hash=AgADsw" },
-                    { name: "calculation cube root 05", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3526?hash=AgADtA" },
-                    { name: "calculation multiplication 06", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3524?hash=AgADAw" }
+                    { name: "digital sum 01", link: "https://filetolink82ii-1-a84d33b9aa38.herokuapp.com/stream/993086?hash=635eca" },
+                    { name: "digital sum 02", link: "https://filetolink82ii-1-a84d33b9aa38.herokuapp.com/stream/993088?hash=6e0b28" },
+                    { name: "Calculation 01", link: "#" },
+                    { name: "Calculation 02", link: "#" },
+                    { name: "Calculation 03", link: "#" },
+                    { name: "Calculation 04", link: "#" },
+                    { name: "Calculation 05", link: "#" },
+                    { name: "Calculation 06", link: "#" }
+                ]
+            },
+            {
+                name: "ᴘᴇʀᴄᴇɴᴛᴀɢᴇ (प्रतिशत)",
+                id: "percentage",
+                chapters: [
+                    { name: "percentage 01", link: "#" },
+                    { name: "percentage 02", link: "#" },
+                    { name: "percentage 03", link: "#" },
+                    { name: "percentage 04", link: "#" },
+                    { name: "percentage 05", link: "#" },
+                    { name: "percentage 06", link: "#" },
+                    { name: "percentage 07", link: "#" },
+                    { name: "percentage 08", link: "#" },
+                    { name: "percentage 09", link: "#" },
+                    { name: "percentage 10", link: "#" },
+                    { name: "percentage 11", link: "#" },
+                    { name: "percentage 12", link: "#" }
+                ]
+            },
+            {
+                name: "ᴘʀᴏꜰɪᴛ & ʟᴏꜱꜱ (लाभ और हानि)",
+                id: "profit-loss",
+                chapters: [
+                    { name: "profit & loss 01", link: "#" },
+                    { name: "profit & loss 02", link: "#" },
+                    { name: "profit & loss 03", link: "#" },
+                    { name: "profit & loss 04", link: "#" },
+                    { name: "profit & loss 05", link: "#" },
+                    { name: "profit & loss 06", link: "#" },
+                    { name: "profit & loss 07", link: "#" },
+                    { name: "profit & loss 08", link: "#" },
+                    { name: "profit & loss 09", link: "#" },
+                    { name: "profit & loss 10", link: "#" }
+                ]
+            },
+            {
+                name: "ᴅɪꜱᴄᴏᴜɴᴛ (बट्टा)",
+                id: "discount",
+                chapters: [
+                    { name: "discount 01", link: "#" },
+                    { name: "discount 02", link: "#" },
+                    { name: "discount 03", link: "#" },
+                    { name: "discount 04", link: "#" },
+                    { name: "discount 05", link: "#" },
+                    { name: "discount 06", link: "#" }
                 ]
             },
             {
                 name: "ꜱɪᴍᴘʟᴇ ɪɴᴛᴇʀᴇꜱᴛ (साधारण ब्याज)",
                 id: "simple-interest",
                 chapters: [
-                    { name: "simple interest 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3528?hash=AgADtg" },
-                    { name: "simple interest 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3530?hash=AgADcw" },
-                    { name: "simple interest 03", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3532?hash=AgADQA" },
-                    { name: "simple interest 04", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3534?hash=AgAD2w" },
-                    { name: "simple interest 05", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3536?hash=AgADTg" },
-                    { name: "simple interest 06", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3540?hash=AgADvA" },
-                    { name: "simple interest 07", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3538?hash=AgADIg" },
-                    { name: "simple interest 08", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3542?hash=AgADfg" },
-                    { name: "simple interest 09", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3544?hash=AgAD1g" },
-                    { name: "simple interest 10", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3552?hash=AgADGQ" },
-                    { name: "simple interest 11", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3558?hash=AgADZA },
-                    { name: "simple interest 12", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3546?hash=AgADqg" },
-                    { name: "simple interest 13", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3548?hash=AgADOg" },
-                    { name: "SI INSTALLMENT 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3550?hash=AgAD1g" },
-                    { name: "SI INSTALLMENT 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3554?hash=AgADFg" },
-                    { name: "SI INSTALLMENT 03", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3556?hash=AgADqA" },
+                    { name: "simple interest 01", link: "#" },
+                    { name: "simple interest 02", link: "#" },
+                    { name: "simple interest 03", link: "#" },
+                    { name: "S. I. (installment)", link: "#" }
                 ]
             },
             {
-                name: "ᴛʀɪɢᴏɴᴏᴍᴇᴛʀʏ",
-                id: "trigonometry",
+                name: "ᴄᴏᴍᴘᴏᴜɴᴅ ɪɴᴛᴇʀᴇꜱᴛ (चक्रवृद्धि ब्याज)",
+                id: "compound-interest",
                 chapters: [
-                    { name: "trigonometry 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3564?hash=AgADUA" },
-                    { name: "trigonometry 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3562?hash=AgADVA" },
-                    { name: "trigonometry 03", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3566?hash=AgADWQ" },
-                    { name: "trigonometry 04", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3560?hash=AgADWw" },
-                    { name: "trigonometry 05", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3572?hash=AgADtg" },
-                    { name: "trigonometry 06", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3570?hash=AgADMA" },
-                    { name: "trigonometry 07", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3568?hash=AgADrQ" },
-                    { name: "trigonometry 08", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3574?hash=AgADJA" },
-                    { name: "trigonometry 09", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3576?hash=AgADOw" },
-                    { name: "trigonometry 10", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3578?hash=AgADCg" },
-                    { name: "trigonometry 11", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3580?hash=AgADYg" },
-                    { name: "trigonometry 12", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3582?hash=AgADCQ" },
-                    { name: "trigonometry 13", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3590?hash=AgADDA" },
-                    { name: "trigonometry 14", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3588?hash=AgADUA" },
-                    { name: "trigonometry 15", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3584?hash=AgADBA" },
-                    { name: "trigonometry 16", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3586?hash=AgADaA" },
-                    { name: "trigonometry 17", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3598?hash=AgADYA" },
-                    { name: "trigonometry 18", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3594?hash=AgADfQ" },
-                    { name: "trigonometry 19", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3592?hash=AgADNQ" },
-                    { name: "trigonometry 20", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3596?hash=AgADCA" },
-                    { name: "trigonometry 21", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3602?hash=AgADXQ" },
-                    { name: "trigonometry 22", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3604?hash=AgADbR" },
-                    { name: "trigonometry 23", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3600?hash=AgADqQ" }
+                    { name: "compound interest 01", link: "#" },
+                    { name: "compound interest 02", link: "#" },
+                    { name: "compound interest 03", link: "#" },
+                    { name: "compound interest 04", link: "#" },
+                    { name: "compound interest 05", link: "#" },
+                    { name: "compound interest 06", link: "#" },
+                    { name: "compound interest 07", link: "#" },
+                    { name: "C. I (installment)", link: "#" }
                 ]
             },
             {
-                name: "ᴍᴀxɪᴍᴀ & ᴍɪɴɪᴍᴀ (ᴛʀɪɢᴏɴᴏᴍᴇᴛʀʏ)",
-                id: "maxima-minima",
+                name: "ᴛɪᴍᴇ , ꜱᴘᴇᴇᴅ & ᴅɪꜱᴛᴀɴᴄᴇ",
+                id: "time-speed-distance",
                 chapters: [
-                    { name: "maxima & minima 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3606?hash=AgADqw" },
-                    { name: "maxima & minima 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3612?hash=AgADrQ" }
+                    { name: "Time, Speed & Distance 01", link: "#" },
+                    { name: "Time, Speed & Distance 02", link: "#" },
+                    { name: "Time, Speed & Distance 03", link: "#" },
+                    { name: "Time, Speed & Distance 04", link: "#" },
+                    { name: "Time, Speed & Distance 05", link: "#" },
+                    { name: "Time, Speed & Distance 06", link: "#" },
+                    { name: "Time, Speed & Distance 07", link: "#" },
+                    { name: "Time, Speed & Distance 08", link: "#" },
+                    { name: "Time, Speed & Distance 09", link: "#" },
+                    { name: "Time, Speed & Distance 10", link: "#" }
                 ]
             },
             {
-                name: "ʜᴇɪɢʜᴛ & ᴅɪꜱᴛᴀɴᴄᴇ",
-                id: "height-distance",
+                name: "ᴛɪᴍᴇ & ᴡᴏʀᴋ",
+                id: "time-work",
                 chapters: [
-                    { name: "height & distance 01", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3608?hash=AgAD6Q" },
-                    { name: "height & distance 02", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3610?hash=AgADzw" },
-                    { name: "height & distance 03", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3616?hash=AgAD4w" }
-                    { name: "height & distance 04", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3614?hash=AgADjA" },
-                    { name: "height & distance 05", link: "https://av-file-to-link-pro-3a5qd.sevalla.app/3618?hash=AgADjg" },
+                    { name: "Time & Work 01", link: "#" },
+                    { name: "Time & Work 02", link: "#" },
+                    { name: "Time & Work 03", link: "#" },
+                    { name: "Time & Work 04", link: "#" },
+                    { name: "Time & Work 05", link: "#" },
+                    { name: "Time & Work 06", link: "#" },
+                    { name: "Time & Work 07", link: "#" },
+                    { name: "Time & Work 08", link: "#" },
+                    { name: "Time & Work 09", link: "#" },
+                    { name: "Time & Work 10", link: "#" }
+                ]
+            },
+            {
+                name: "ᴘɪᴘᴇ & ᴄɪꜱᴛᴇʀɴ",
+                id: "pipe-cistern",
+                chapters: [
+                    { name: "Pipe & Cistern 01", link: "#" },
+                    { name: "Pipe & Cistern 02", link: "#" },
+                    { name: "Pipe & Cistern 03", link: "#" }
+                ]
+            },
+            {
+                name: "ᴛʀᴀɪɴ",
+                id: "train",
+                chapters: [
+                    { name: "Train 01", link: "#" },
+                    { name: "Train 02", link: "#" },
+                    { name: "Train 03", link: "#" },
+                    { name: "Train 04", link: "#" },
+                    { name: "Train 05", link: "#" },
+                    { name: "Train 06", link: "#" }
+                ]
+            },
+            {
+                name: "ʀᴀᴄᴇ",
+                id: "race",
+                chapters: [
+                    { name: "Race 01", link: "#" },
+                    { name: "Race 02", link: "#" },
+                    { name: "Race 03", link: "#" }
+                ]
+            },
+            {
+                name: "ᴄɪʀᴄᴜʟᴀʀ ᴍᴏᴛɪᴏɴ",
+                id: "circular-motion",
+                chapters: [
+                    { name: "Complete", link: "#" }
+                ]
+            },
+            {
+                name: "ʙᴏᴀᴛ & ꜱᴛʀᴇᴀᴍ",
+                id: "boat-stream",
+                chapters: [
+                    { name: "Boat & Stream 01", link: "#" },
+                    { name: "Boat & Stream 02", link: "#" },
+                    { name: "Boat & Stream 03", link: "#" },
+                    { name: "Boat & Stream 04", link: "#" },
+                    { name: "Boat & Stream 05", link: "#" }
+                ]
+            },
+            {
+                name: "ʀᴀᴛɪᴏ (अनुपात)",
+                id: "ratio",
+                chapters: [
+                    { name: "Ratio 01", link: "#" },
+                    { name: "Ratio 02", link: "#" },
+                    { name: "Ratio 03", link: "#" },
+                    { name: "Ratio 04", link: "#" },
+                    { name: "Ratio 05", link: "#" },
+                    { name: "Ratio 06", link: "#" },
+                    { name: "Ratio 07", link: "#" },
+                    { name: "Ratio 08", link: "#" },
+                    { name: "Ratio 09", link: "#" },
+                    { name: "Ratio 10", link: "#" },
+                    { name: "Ratio 11", link: "#" },
+                    { name: "Ratio 12", link: "#" }
+                ]
+            },
+            {
+                name: "ʜᴄꜰ & ʟᴄᴍ",
+                id: "hcf-lcm",
+                chapters: [
+                    { name: "HCF & LCM 01", link: "#" },
+                    { name: "HCF & LCM 02", link: "#" },
+                    { name: "HCF & LCM 03", link: "#" },
+                    { name: "HCF & LCM 04", link: "#" },
+                    { name: "HCF & LCM 05", link: "#" },
+                    { name: "HCF & LCM 06", link: "#" },
+                    { name: "HCF & LCM 07", link: "#" },
+                    { name: "HCF & LCM 08", link: "#" },
+                    { name: "HCF & LCM 09", link: "#" },
+                    { name: "HCF & LCM 10", link: "#" }
+                ]
+            },
+            {
+                name: "ᴘʀᴏᴘᴏʀᴛɪᴏɴ (समानुपात)",
+                id: "proportion",
+                chapters: [
+                    { name: "Proportion 01", link: "#" },
+                    { name: "Proportion 02", link: "#" },
+                    { name: "Proportion 03", link: "#" }
+                ]
+            },
+            {
+                name: "ᴀɢᴇꜱ",
+                id: "ages",
+                chapters: [
+                    { name: "Ages 01", link: "#" },
+                    { name: "Ages 02", link: "#" },
+                    { name: "Ages 03", link: "#" }
+                ]
+            },
+            {
+                name: "ᴘᴀʀᴛɴᴇʀꜱʜɪᴘ",
+                id: "partnership",
+                chapters: [
+                    { name: "Partnership 01", link: "#" },
+                    { name: "Partnership 02", link: "#" },
+                    { name: "Partnership 03", link: "#" },
+                    { name: "Partnership 04", link: "#" },
+                    { name: "Partnership 05", link: "#" },
+                    { name: "Partnership 06", link: "#" },
+                    { name: "Partnership 07", link: "#" }
+                ]
+            },
+            {
+                name: "ᴍɪxᴛᴜʀᴇ",
+                id: "mixture",
+                chapters: [
+                    { name: "Mixture 01", link: "#" },
+                    { name: "Mixture 02", link: "#" },
+                    { name: "Mixture 03", link: "#" },
+                    { name: "Mixture 04", link: "#" },
+                    { name: "Mixture 05", link: "#" },
+                    { name: "Mixture 06", link: "#" },
+                    { name: "Mixture 07", link: "#" },
+                    { name: "Mixture 08", link: "#" }
+                ]
+            },
+            {
+                name: "ᴀʟʟɪɢᴀᴛɪᴏɴ",
+                id: "alligation",
+                chapters: [
+                    { name: "Alligation 01", link: "#" },
+                    { name: "Alligation 02", link: "#" },
+                    { name: "Alligation 03", link: "#" },
+                    { name: "Alligation 04", link: "#" },
+                    { name: "Alligation 05", link: "#" }
+                ]
+            },
+            {
+                name: "ᴀᴠᴇʀᴀɢᴇ (ɴᴇᴡ)",
+                id: "average",
+                chapters: [
+                    { name: "Average 01", link: "#" },
+                    { name: "Average 02", link: "#" },
+                    { name: "Average 03", link: "#" },
+                    { name: "Average 04", link: "#" },
+                    { name: "Average 05", link: "#" },
+                    { name: "Average 06", link: "#" },
+                    { name: "Average 07", link: "#" },
+                    { name: "Average 08", link: "#" },
+                    { name: "Average 09", link: "#" },
+                    { name: "Average 10", link: "#" },
+                    { name: "Average 11", link: "#" },
+                    { name: "Average 12", link: "#" },
+                    { name: "Average 13", link: "#" },
+                    { name: "Average 14", link: "#" },
+                    { name: "Average 15", link: "#" }
+                ]
+            },
+            {
+                name: "ꜱɪᴍᴘʟɪꜰɪᴄᴀᴛɪᴏɴ",
+                id: "simplification",
+                chapters: [
+                    { name: "Simplification 01", link: "#" },
+                    { name: "Simplification 02", link: "#" },
+                    { name: "Simplification 03", link: "#" },
+                    { name: "Simplification 04", link: "#" }
+                ]
+            },
+            {
+                name: "ꜱᴜʀᴅꜱ & ɪɴᴅɪᴄᴇꜱ",
+                id: "surd-indices",
+                chapters: [
+                    { name: "Surd & Indices 01", link: "#" },
+                    { name: "Surd & Indices 02", link: "#" },
+                    { name: "Surd & Indices 03", link: "#" },
+                    { name: "Surd & Indices 04", link: "#" },
+                    { name: "Surd & Indices 05", link: "#" },
+                    { name: "Surd & Indices 06", link: "#" },
+                    { name: "Surd & Indices 07", link: "#" },
+                    { name: "Surd & Indices 08", link: "#" },
+                    { name: "Surd & Indices 09", link: "#" }
+                ]
+            },
+            {
+                name: "ɴᴜᴍʙᴇʀ ꜱʏꜱᴛᴇᴍ (संख्या पद्धति)",
+                id: "number-system",
+                chapters: [
+                    { name: "Classification of No 01", link: "#" },
+                    { name: "Classification of No 02", link: "#" },
+                    { name: "Classification of No 03", link: "#" },
+                    { name: "Unit Digit No 01", link: "#" },
+                    { name: "Unit Digit No 02", link: "#" },
+                    { name: "Unit Digit No 03", link: "#" },
+                    { name: "Divisibility 01", link: "#" },
+                    { name: "Divisibility 02", link: "#" },
+                    { name: "Divisibility 03", link: "#" },
+                    { name: "Divisibility 04", link: "#" },
+                    { name: "Divisibility 05", link: "#" },
+                    { name: "Divisibility 06", link: "#" },
+                    { name: "Divisibility 07", link: "#" },
+                    { name: "Divisibility 08", link: "#" },
+                    { name: "Divisibility 09", link: "#" },
+                    { name: "Divisibility 10", link: "#" },
+                    { name: "Remainder 01", link: "#" },
+                    { name: "Remainder 02", link: "#" },
+                    { name: "Remainder 03", link: "#" },
+                    { name: "Remainder 04", link: "#" },
+                    { name: "Remainder 05", link: "#" },
+                    { name: "Remainder 06", link: "#" },
+                    { name: "Factor 01", link: "#" },
+                    { name: "Factor 02", link: "#" },
+                    { name: "Factor 03", link: "#" },
+                    { name: "Factor 04", link: "#" },
+                    { name: "No of Zeros 01", link: "#" },
+                    { name: "No of Zeros 02", link: "#" },
+                    { name: "No of Zeros 03", link: "#" }
                 ]
             }
         ];
@@ -479,8 +715,7 @@
                     const chapterCard = document.createElement('a');
                     chapterCard.className = 'chapter-card';
                     chapterCard.href = chapter.link;
-                    // 🔥 CHANGE HERE: Same tab mein open karne ke liye
-                    chapterCard.target = '_self'; // Ya is line ko completely hata do
+                    chapterCard.target = '_blank';
                     chapterCard.textContent = chapter.name;
                     chapterList.appendChild(chapterCard);
                 });
